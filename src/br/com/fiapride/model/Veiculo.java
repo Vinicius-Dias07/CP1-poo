@@ -12,15 +12,23 @@ public class Veiculo {
     }
 
     public void adicionarGas(double v) {
-        this.gas += v;
-        System.out.println("Adicionando gas...");
-        System.out.printf("Gás atual: %.2f\n", getGas());
+        if (v >0) {
+            this.gas += v;
+            System.out.println("Adicionando gas...");
+            System.out.printf("Gás atual: %.2f\n", getGas());
+        } else {
+            System.out.println("para adicionar digite um valor maior que zero");
+        }
     }
 
     public void gastarGas(double v) {
-        this.gas -= v;
-        System.out.println("gastando gas...");
-        System.out.printf("Gás atual: %.2f\n", getGas());
+        if (v > 0) {
+            this.gas -= v;
+            System.out.println("gastando gas...");
+            System.out.printf("Gás atual: %.2f\n", getGas());
+        } else {
+            System.out.println("para gastar digite um valor maior que zero");
+        }
     }
 
     public String getIndividuo() {

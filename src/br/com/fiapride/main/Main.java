@@ -11,7 +11,10 @@ public class Main {
         v1.adicionarGas(24.7);
         System.out.println("----------------");
         v1.gastarGas(40.5);
-
+        System.out.println("----------------");
+        v1.adicionarGas(-10);
+        System.out.println("----------------");
+        v1.gastarGas(0);
 
     }
 
